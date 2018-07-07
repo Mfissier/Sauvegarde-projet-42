@@ -1,2 +1,2 @@
-find . -name "#*#" -typef -print -o -name "*~" -typef -print -delete
+find . -name "#*#" -type f -print -o -name "*~" -type f -print -delete
 
