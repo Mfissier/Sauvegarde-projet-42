@@ -1,0 +1,6 @@
+nt     main(int argc, char **argv)
+ 40 {
+	  41     (void)argc;
+	   42     printf ("%s", ft_strrev(argv[1]));
+	    43     return(0);
+		 44 }
