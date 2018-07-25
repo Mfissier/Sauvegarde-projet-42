@@ -1,0 +1,42 @@
+#include <unistd.h>
+
+int     ft_putchar(char c);
+
+void    print_lng(int x, char beg, char mid, char end)
+{
+	    int     actual_col;
+
+		    actual_col = 1;
+			    if (x <= 0)
+					        return ;
+							    if (actual_col == 1)
+									        ft_putchar(beg);
+											    actual_col++;
+												    while (actual_col < x)
+														    {
+																        ft_putchar(mid);
+																		        actual_col++;
+																				    }
+																					    if (actual_col == x)
+																							        ft_putchar(end);
+																									    ft_putchar('\n');
+}
+
+void    rush(int x, int y)
+{
+	    int actual_line;
+
+		    if ((x <= 0) || (y <= 0))
+				        return ;
+						    actual_line = 1;
+							    if (actual_line == 1)
+									        print_lng(x, 'o', '-', 'o');
+											    actual_line++;
+												    while (actual_line < y)
+														    {
+																        print_lng(x, '|', ' ', '|');
+																		        actual_line++;
+																				    }
+																					    if (actual_line == y)
+																							        print_lng(x, 'o', '-', 'o');
+}
